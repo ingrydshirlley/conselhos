@@ -1,0 +1,130 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&display=swap');
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: 'Space Grotesk', sans-serif;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+    background-color: #921d23;
+    display: flex;
+    flex-direction: column;
+}
+
+header {
+    font-weight: bolder;
+    height: 20%;
+    display: flex;
+    align-items: end;
+    justify-content: center;
+}
+
+.title {
+    color: white;
+    border-bottom: 5px solid #f0be83;
+    font-size: 50px;
+}
+
+main {
+    display: flex;
+    align-items: center;
+    height: 75%;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+.img-biscoito {
+    width: 500px;
+}
+
+.img-biscoito:hover {
+    transform: scale(1.02);
+    transition: .7s;
+}
+
+#botao {
+    width: 100px;
+    height: 40px;
+    font-size: 20px;
+    border-radius: 10px;
+    border: none;
+    background-color: #ffffff;
+    content: "→";
+    font-weight: bolder;
+    color: #ee8e51;
+    box-shadow: -2px 3px 0 #f0be83, -4px 6px 0 #ee8e51;
+}
+
+
+
+#botao:active {
+    box-shadow: inset -4px 4px 0 #f0be83;
+    font-size: 2rem;
+}
+
+.container-conselho {
+    width: 40%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.conselho {
+    background-color: rgb(246, 246, 246);
+    width: 90%;
+    height: 50%;
+    border-radius: 25px;
+    padding: 15px;
+    text-align: center;
+    font-size: 18px;
+    border: 5px solid #f0be83;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+footer {
+    font-weight: lighter;
+    height: 5%;
+    display: flex;
+    align-items: top;
+    justify-content: center;
+    color: #f0be83;
+}
+
+@media screen and (max-width: 400px) {
+    .title {
+       font-size: 40px;
+    }
+
+    main{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .img-biscoito {
+        width: 300px;
+    }
+
+    .container-conselho {
+        width: 100%;
+    }
+    
+    .conselho {
+        background-color: rgb(246, 246, 246);
+        width: 95%;
+        height: 100px;
+        padding: 10px;
+        font-size: 15px;
+    }
+    
+    footer {
+        font-size: 12px;
+    }
+}
